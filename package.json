@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/monicamantilla/hot-restaurants/issues"
   },
-  "homepage": "https://github.com/monicamantilla/hot-restaurants#readme"
+  "homepage": "https://github.com/monicamantilla/hot-restaurants#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "msql": "^1.0.3"
+  }
 }

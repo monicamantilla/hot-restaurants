@@ -1,0 +1,10 @@
+CREATE DATABASE reservations;
+USE reservations;
+CREATE TABLE reservation (
+id INTEGER(10) NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+`name` VARCHAR(50),
+phoneNumber VARCHAR(10) NOT NULL,
+customerEmail VARCHAR(50) NOT NULL,
+tableId INTEGER(10) NOT NULL,
+isWaitList BOOLEAN NOT NULL DEFAULT false
+);
