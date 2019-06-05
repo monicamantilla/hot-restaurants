@@ -27,6 +27,8 @@ module.exports = function (app, connection) {
         insertReservation(reservation, res)
 
     });
+
+
     var reservations = []
     var waitList = []
 
@@ -59,8 +61,8 @@ module.exports = function (app, connection) {
 
     function insertReservation(reservation,  res) {
         
-        var insertReservationsSQL = `INSERT INTO reservation (phoneNumber, customerEmail, tableId, isWaitList) VALUES (${reservation.name}${reservation.phoneNumber},${reservation.customerEmail},0,0)`
-        connection.query(insertReservationsSQL, [], function (error, results) {
+        var insertReservationsSQL = `INSERT INTO reservation (name, phoneNumber, customerEmail, tableId, isWaitList) VALUES (${reservation.name}${reservation.phoneNumber},${reservation.customerEmail},0,0)`
+        connection.query(insertReservationsSQL, function (error, results) {
             if (error) throw error
             res.json({"status": 200, "message": "Success"});
         })
