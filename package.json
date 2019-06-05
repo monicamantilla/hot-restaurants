@@ -1,0 +1,19 @@
+{
+  "name": "hot-restaurants",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/monicamantilla/hot-restaurants.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/monicamantilla/hot-restaurants/issues"
+  },
+  "homepage": "https://github.com/monicamantilla/hot-restaurants#readme"
+}
