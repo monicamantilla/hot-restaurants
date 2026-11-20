@@ -22,7 +22,7 @@ connection.connect(function (error) {
 var connection = mysql.createConnection({
         host: 'localhost',
         user: "root",
-        password: "Rcc083178",
+        password: "",
         database: "reservations"
 });
 require("/routes/html.js")(app, connection)
